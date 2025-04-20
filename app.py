@@ -18,7 +18,7 @@ st.markdown('This demo uses example data (2D) to illustrate clustering results.'
 
 # Load from a served dataset or generate synthetic data
 from sklearn.datasets import make_blobs
-X, _ = make_blobs(n_samples=300, centers=loaded_model.n_clusters, cluster_std=0.60, random_state=42)
+X, _ = make_blobs(n_samples=300, centers=loaded_model.n_clusters, cluster_std=0.60, random_state=0)
 
 # Predict using the loaded model 
 y_kmeans = loaded_model.predict(X) 
